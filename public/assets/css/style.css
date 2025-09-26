@@ -823,16 +823,20 @@ main {
 .clients-item {
   /* min-width: 50%; */
   scroll-snap-align: start;
+  border: 1px solid #ffdb701a;
+  border-radius: 10px;
+  padding: 15px;
+  background: #ffffff03;
 }
 
 .clients-item img {
-  width: 75px;
-  filter: grayscale(1);
+  width: 40px;
   transition: var(--transition-1);
+  transition: transform 2s ease;
 }
 
-.clients-item img:hover {
-  filter: grayscale(0);
+.clients-item:hover img {
+  transform: rotate(360deg);
 }
 
 
